@@ -1,0 +1,4 @@
+<category *ngFor="let category of categories"
+          [category]="category"
+          (activeBook)="activateBook($event)"
+></category>

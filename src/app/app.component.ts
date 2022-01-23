@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {CategoryService} from "./services/category.service";
+import {Observable, Subject, takeUntil} from "rxjs";
+import {ICategory} from "./models/models";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'books';
+
 }

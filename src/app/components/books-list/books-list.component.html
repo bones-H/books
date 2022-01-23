@@ -1,0 +1,11 @@
+<div
+  *ngFor="let book of books; let i = index"
+  (click)="bookClick.emit(book)"
+  class="book-box"
+>
+  <span class="book-index">{{ i + 1 }})</span>
+  <book
+    [book]="book"
+  ></book>
+</div>
+

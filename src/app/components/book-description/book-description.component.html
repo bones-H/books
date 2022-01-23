@@ -1,0 +1,9 @@
+<div *ngIf="activeBook; else default">
+  <div>{{activeBook.name}}/{{activeBook.author}}</div>
+  <div>{{activeBook.description}}</div>
+</div>
+<ng-template #default>
+  <div>
+    Выберите книгу
+  </div>
+</ng-template>

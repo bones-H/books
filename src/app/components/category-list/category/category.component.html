@@ -1,0 +1,16 @@
+<h3 (click)="hideCateggory()">{{category.name}}</h3>
+<div
+  [hidden]="hidden"
+  class="category-box"
+>
+  <books-list
+    *ngIf="category.books?.length"
+    [books]="category.books"
+    (bookClick)="activateBook($event)"
+  ></books-list>
+  <category
+    *ngIf="category.category"
+    [category]="category.category"
+    (activeBook)="activateBook($event)"
+  ></category>
+</div>
